@@ -38,7 +38,7 @@ function init() {
       ctx.fillText("Points : " + Points ,50,50);
       ctx.fillText("Modyficator click : " + PointsForClick,50,70);
 
-
+// sefesf
       //earth(color);
       //sphere(color,450,200);
       // drawNew(color,1);
