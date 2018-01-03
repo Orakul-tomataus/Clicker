@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clicker</title>
+    <script src="Game_Clicker.js"></script>
+    <link rel="stylesheet" href="Game_Clicker.css">
+  </head>
+  <body
+  onmousedown="return false"
+  onselectstart="return false">
+    <center><h1>Game</h1></center>
+    <br>
+
+        <center>
+          <canvas
+          class="main_canvas a"
+          id="main_window"
+          onmousedown="return false"
+          onselectstart="return false"
+          onclick="clic()"
+          onmousemove="showCoords(event)"
+          onmouseout="clearCoor()"
+          class="main_canvas"
+          id="main_window"
+          ></canvas>
+          <!-- <div class="b scaner">
+            <div id="button"></div>
+          </div> -->
+        </center>
+
+    <br>
+<p id="demo"></p>
+чисто для отладки<br>
+<p id="demo"></p>
+<script>
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coor = "X coords: " + x + ", Y coords: " + y;
+    document.getElementById("demo").innerHTML = coor;
+}
+
+// function clearCoor() {
+//     document.getElementById("demo").innerHTML = "";
+// }
+</script>
+
+   </body>
+</html>
